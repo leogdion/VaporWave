@@ -42,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B346B9332B3A3FB80023717E /* VaporWave */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VaporWave; sourceTree = "<group>"; };
 		B3A9A4D32B37C02B000FF276 /* VaporWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaporWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A9A4D62B37C02B000FF276 /* VaporWaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporWaveApp.swift; sourceTree = "<group>"; };
 		B3A9A4D82B37C02B000FF276 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,9 +74,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B346B9322B3A3F9B0023717E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B346B9332B3A3FB80023717E /* VaporWave */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 		B3A9A4CA2B37C02B000FF276 = {
 			isa = PBXGroup;
 			children = (
+				B346B9322B3A3F9B0023717E /* Packages */,
 				B3A9A4D52B37C02B000FF276 /* VaporWave */,
 				B3A9A4FD2B37C067000FF276 /* VaporWaveService */,
 				B3A9A4D42B37C02B000FF276 /* Products */,

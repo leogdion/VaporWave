@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B37831672B3B22CF005698C8 /* VaporWaveServer in Frameworks */ = {isa = PBXBuildFile; productRef = B37831662B3B22CF005698C8 /* VaporWaveServer */; };
 		B3A9A4D72B37C02B000FF276 /* VaporWaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A4D62B37C02B000FF276 /* VaporWaveApp.swift */; };
 		B3A9A4D92B37C02B000FF276 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A4D82B37C02B000FF276 /* ContentView.swift */; };
 		B3A9A4DB2B37C02D000FF276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A9A4DA2B37C02D000FF276 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37831672B3B22CF005698C8 /* VaporWaveServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,13 @@
 			path = Packages;
 			sourceTree = "<group>";
 		};
+		B37831652B3B22CF005698C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3A9A4CA2B37C02B000FF276 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +98,7 @@
 				B3A9A4D52B37C02B000FF276 /* VaporWave */,
 				B3A9A4FD2B37C067000FF276 /* VaporWaveService */,
 				B3A9A4D42B37C02B000FF276 /* Products */,
+				B37831652B3B22CF005698C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +177,9 @@
 			dependencies = (
 			);
 			name = VaporWaveService;
+			packageProductDependencies = (
+				B37831662B3B22CF005698C8 /* VaporWaveServer */,
+			);
 			productName = VaporWaveService;
 			productReference = B3A9A4FC2B37C067000FF276 /* VaporWaveService.xpc */;
 			productType = "com.apple.product-type.xpc-service";
@@ -509,6 +522,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B37831662B3B22CF005698C8 /* VaporWaveServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VaporWaveServer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3A9A4CB2B37C02B000FF276 /* Project object */;
 }

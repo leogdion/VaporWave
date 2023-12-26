@@ -6,6 +6,9 @@
 //
 
 import XPC
+import VaporWaveServer
+import Vapor
+var app : Application!
 
 // Set up the listener and start listening for connections.
 startListener()
@@ -13,6 +16,7 @@ startListener()
 // Create the listener that receives incoming session requests from clients.
 func startListener() {
     do {
+      
         _ = try XPCListener(service: "com.brightdigit.VaporWaveService") { request in
             // When a session request arrives, you must either accept or reject it.
             // The listener invokes the closure you specify every time a
@@ -22,9 +26,14 @@ func startListener() {
                 return performTask(with: message)
             }
         }
+      
+      Task {
+        app = try await Entrypoint.start()
+      }
 
         // Start the main dispatch queue to begin processing messages.
         dispatchMain()
+      
     } catch {
         print("Failed to create listener, error: \(error)")
     }

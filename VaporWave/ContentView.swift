@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import VaporWaveModels
 
 @Observable
 class Service {

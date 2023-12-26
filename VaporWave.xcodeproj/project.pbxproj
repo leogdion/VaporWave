@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B37831672B3B22CF005698C8 /* VaporWaveServer in Frameworks */ = {isa = PBXBuildFile; productRef = B37831662B3B22CF005698C8 /* VaporWaveServer */; };
+		B346B9482B3B795D0023717E /* VaporWaveModels in Frameworks */ = {isa = PBXBuildFile; productRef = B346B9472B3B795D0023717E /* VaporWaveModels */; };
+		B346B94A2B3B7CEB0023717E /* VaporWaveService in Frameworks */ = {isa = PBXBuildFile; productRef = B346B9492B3B7CEB0023717E /* VaporWaveService */; };
 		B3A9A4D72B37C02B000FF276 /* VaporWaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A4D62B37C02B000FF276 /* VaporWaveApp.swift */; };
 		B3A9A4D92B37C02B000FF276 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A4D82B37C02B000FF276 /* ContentView.swift */; };
 		B3A9A4DB2B37C02D000FF276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A9A4DA2B37C02D000FF276 /* Assets.xcassets */; };
 		B3A9A4DE2B37C02D000FF276 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A9A4DD2B37C02D000FF276 /* Preview Assets.xcassets */; };
-		B3A9A4FF2B37C067000FF276 /* VaporWaveServiceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A4FE2B37C067000FF276 /* VaporWaveServiceTypes.swift */; };
 		B3A9A5012B37C067000FF276 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A5002B37C067000FF276 /* main.swift */; };
-		B3A9A5062B37C067000FF276 /* VaporWaveService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B3A9A4FC2B37C067000FF276 /* VaporWaveService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B3A9A50A2B37C220000FF276 /* VaporWaveServiceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A4FE2B37C067000FF276 /* VaporWaveServiceTypes.swift */; };
+		B3A9A5062B37C067000FF276 /* VaporWaveServiceApp.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B3A9A4FC2B37C067000FF276 /* VaporWaveServiceApp.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
 			dstSubfolderSpec = 16;
 			files = (
-				B3A9A5062B37C067000FF276 /* VaporWaveService.xpc in Embed XPC Services */,
+				B3A9A5062B37C067000FF276 /* VaporWaveServiceApp.xpc in Embed XPC Services */,
 			);
 			name = "Embed XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,8 +49,7 @@
 		B3A9A4DA2B37C02D000FF276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3A9A4DD2B37C02D000FF276 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3A9A4DF2B37C02D000FF276 /* VaporWave.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaporWave.entitlements; sourceTree = "<group>"; };
-		B3A9A4FC2B37C067000FF276 /* VaporWaveService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = VaporWaveService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3A9A4FE2B37C067000FF276 /* VaporWaveServiceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporWaveServiceTypes.swift; sourceTree = "<group>"; };
+		B3A9A4FC2B37C067000FF276 /* VaporWaveServiceApp.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = VaporWaveServiceApp.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A9A5002B37C067000FF276 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B3A9A5022B37C067000FF276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3A9A5032B37C067000FF276 /* VaporWaveService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaporWaveService.entitlements; sourceTree = "<group>"; };
@@ -62,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B346B9482B3B795D0023717E /* VaporWaveModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37831672B3B22CF005698C8 /* VaporWaveServer in Frameworks */,
+				B346B94A2B3B7CEB0023717E /* VaporWaveService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				B3A9A4D32B37C02B000FF276 /* VaporWave.app */,
-				B3A9A4FC2B37C067000FF276 /* VaporWaveService.xpc */,
+				B3A9A4FC2B37C067000FF276 /* VaporWaveServiceApp.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +133,6 @@
 		B3A9A4FD2B37C067000FF276 /* VaporWaveService */ = {
 			isa = PBXGroup;
 			children = (
-				B3A9A4FE2B37C067000FF276 /* VaporWaveServiceTypes.swift */,
 				B3A9A5002B37C067000FF276 /* main.swift */,
 				B3A9A5022B37C067000FF276 /* Info.plist */,
 				B3A9A5032B37C067000FF276 /* VaporWaveService.entitlements */,
@@ -160,13 +158,16 @@
 				B3A9A5052B37C067000FF276 /* PBXTargetDependency */,
 			);
 			name = VaporWave;
+			packageProductDependencies = (
+				B346B9472B3B795D0023717E /* VaporWaveModels */,
+			);
 			productName = VaporWave;
 			productReference = B3A9A4D32B37C02B000FF276 /* VaporWave.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B3A9A4FB2B37C067000FF276 /* VaporWaveService */ = {
+		B3A9A4FB2B37C067000FF276 /* VaporWaveServiceApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3A9A5072B37C067000FF276 /* Build configuration list for PBXNativeTarget "VaporWaveService" */;
+			buildConfigurationList = B3A9A5072B37C067000FF276 /* Build configuration list for PBXNativeTarget "VaporWaveServiceApp" */;
 			buildPhases = (
 				B3A9A4F82B37C067000FF276 /* Sources */,
 				B3A9A4F92B37C067000FF276 /* Frameworks */,
@@ -176,12 +177,12 @@
 			);
 			dependencies = (
 			);
-			name = VaporWaveService;
+			name = VaporWaveServiceApp;
 			packageProductDependencies = (
-				B37831662B3B22CF005698C8 /* VaporWaveServer */,
+				B346B9492B3B7CEB0023717E /* VaporWaveService */,
 			);
 			productName = VaporWaveService;
-			productReference = B3A9A4FC2B37C067000FF276 /* VaporWaveService.xpc */;
+			productReference = B3A9A4FC2B37C067000FF276 /* VaporWaveServiceApp.xpc */;
 			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +217,7 @@
 			projectRoot = "";
 			targets = (
 				B3A9A4D22B37C02B000FF276 /* VaporWave */,
-				B3A9A4FB2B37C067000FF276 /* VaporWaveService */,
+				B3A9A4FB2B37C067000FF276 /* VaporWaveServiceApp */,
 			);
 		};
 /* End PBXProject section */
@@ -246,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A9A4D92B37C02B000FF276 /* ContentView.swift in Sources */,
-				B3A9A50A2B37C220000FF276 /* VaporWaveServiceTypes.swift in Sources */,
 				B3A9A4D72B37C02B000FF276 /* VaporWaveApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A9A5012B37C067000FF276 /* main.swift in Sources */,
-				B3A9A4FF2B37C067000FF276 /* VaporWaveServiceTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +264,7 @@
 /* Begin PBXTargetDependency section */
 		B3A9A5052B37C067000FF276 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B3A9A4FB2B37C067000FF276 /* VaporWaveService */;
+			target = B3A9A4FB2B37C067000FF276 /* VaporWaveServiceApp */;
 			targetProxy = B3A9A5042B37C067000FF276 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -412,8 +411,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brightdigit.VaporWave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -440,8 +442,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brightdigit.VaporWave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -512,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3A9A5072B37C067000FF276 /* Build configuration list for PBXNativeTarget "VaporWaveService" */ = {
+		B3A9A5072B37C067000FF276 /* Build configuration list for PBXNativeTarget "VaporWaveServiceApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3A9A5082B37C067000FF276 /* Debug */,
@@ -524,9 +529,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B37831662B3B22CF005698C8 /* VaporWaveServer */ = {
+		B346B9472B3B795D0023717E /* VaporWaveModels */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = VaporWaveServer;
+			productName = VaporWaveModels;
+		};
+		B346B9492B3B7CEB0023717E /* VaporWaveService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VaporWaveService;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

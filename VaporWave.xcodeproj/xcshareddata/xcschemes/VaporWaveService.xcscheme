@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3A9A4FB2B37C067000FF276"
-               BuildableName = "VaporWaveService.xpc"
-               BlueprintName = "VaporWaveService"
+               BuildableName = "VaporWaveServiceApp.xpc"
+               BlueprintName = "VaporWaveServiceApp"
                ReferencedContainer = "container:VaporWave.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,8 +60,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3A9A4FB2B37C067000FF276"
-            BuildableName = "VaporWaveService.xpc"
-            BlueprintName = "VaporWaveService"
+            BuildableName = "VaporWaveServiceApp.xpc"
+            BlueprintName = "VaporWaveServiceApp"
             ReferencedContainer = "container:VaporWave.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

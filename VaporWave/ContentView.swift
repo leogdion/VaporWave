@@ -11,6 +11,7 @@ import VaporWaveModels
 @Observable
 class Service {
   var session : XPCSession?
+  var server : XPCSession?
   var firstNumber : Int?
   var secondNumber : Int?
   private(set) var resultNumber : Int?
@@ -21,6 +22,9 @@ class Service {
   func initialize () {
     do {
       session = try XPCSession(xpcService: "com.brightdigit.VaporWaveService")
+      let server = try XPCSession(xpcService: "com.brightdigit.VaporWaveServer")
+      try server.send(CalculationRequest(firstNumber: 0, secondNumber: 0))
+      self.server = server
     } catch {
       print(error)
     }

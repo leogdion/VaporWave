@@ -1,3 +1,3 @@
 import VaporWaveService
 
-try await Service.launch(service: "com.brightdigit.VaporWaveService")
+try Service.launch(service: "com.brightdigit.VaporWaveService")

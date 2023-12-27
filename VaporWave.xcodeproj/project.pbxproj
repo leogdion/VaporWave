@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B346B9482B3B795D0023717E /* VaporWaveModels in Frameworks */ = {isa = PBXBuildFile; productRef = B346B9472B3B795D0023717E /* VaporWaveModels */; };
 		B346B94A2B3B7CEB0023717E /* VaporWaveService in Frameworks */ = {isa = PBXBuildFile; productRef = B346B9492B3B7CEB0023717E /* VaporWaveService */; };
+		B36E2E2D2B3CD22E00FA9975 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36E2E2C2B3CD22E00FA9975 /* main.swift */; };
+		B36E2E322B3CD22E00FA9975 /* VaporWaveServerApp.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B36E2E282B3CD22E00FA9975 /* VaporWaveServerApp.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B36E2E372B3CD24900FA9975 /* VaporWaveServer in Frameworks */ = {isa = PBXBuildFile; productRef = B36E2E362B3CD24900FA9975 /* VaporWaveServer */; };
 		B3A9A4D72B37C02B000FF276 /* VaporWaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A4D62B37C02B000FF276 /* VaporWaveApp.swift */; };
 		B3A9A4D92B37C02B000FF276 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9A4D82B37C02B000FF276 /* ContentView.swift */; };
 		B3A9A4DB2B37C02D000FF276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A9A4DA2B37C02D000FF276 /* Assets.xcassets */; };
@@ -18,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B36E2E302B3CD22E00FA9975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3A9A4CB2B37C02B000FF276 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B36E2E272B3CD22E00FA9975;
+			remoteInfo = VaporWaveServerApp;
+		};
 		B3A9A5042B37C067000FF276 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B3A9A4CB2B37C02B000FF276 /* Project object */;
@@ -34,6 +44,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
 			dstSubfolderSpec = 16;
 			files = (
+				B36E2E322B3CD22E00FA9975 /* VaporWaveServerApp.xpc in Embed XPC Services */,
 				B3A9A5062B37C067000FF276 /* VaporWaveServiceApp.xpc in Embed XPC Services */,
 			);
 			name = "Embed XPC Services";
@@ -43,6 +54,10 @@
 
 /* Begin PBXFileReference section */
 		B346B9332B3A3FB80023717E /* VaporWave */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VaporWave; sourceTree = "<group>"; };
+		B36E2E282B3CD22E00FA9975 /* VaporWaveServerApp.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = VaporWaveServerApp.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36E2E2C2B3CD22E00FA9975 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B36E2E2E2B3CD22E00FA9975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36E2E2F2B3CD22E00FA9975 /* VaporWaveServerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaporWaveServerApp.entitlements; sourceTree = "<group>"; };
 		B3A9A4D32B37C02B000FF276 /* VaporWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaporWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A9A4D62B37C02B000FF276 /* VaporWaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporWaveApp.swift; sourceTree = "<group>"; };
 		B3A9A4D82B37C02B000FF276 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +71,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B36E2E252B3CD22E00FA9975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36E2E372B3CD24900FA9975 /* VaporWaveServer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3A9A4D02B37C02B000FF276 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,6 +106,16 @@
 			path = Packages;
 			sourceTree = "<group>";
 		};
+		B36E2E292B3CD22E00FA9975 /* VaporWaveServerApp */ = {
+			isa = PBXGroup;
+			children = (
+				B36E2E2C2B3CD22E00FA9975 /* main.swift */,
+				B36E2E2E2B3CD22E00FA9975 /* Info.plist */,
+				B36E2E2F2B3CD22E00FA9975 /* VaporWaveServerApp.entitlements */,
+			);
+			path = VaporWaveServerApp;
+			sourceTree = "<group>";
+		};
 		B37831652B3B22CF005698C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +129,7 @@
 				B346B9322B3A3F9B0023717E /* Packages */,
 				B3A9A4D52B37C02B000FF276 /* VaporWave */,
 				B3A9A4FD2B37C067000FF276 /* VaporWaveService */,
+				B36E2E292B3CD22E00FA9975 /* VaporWaveServerApp */,
 				B3A9A4D42B37C02B000FF276 /* Products */,
 				B37831652B3B22CF005698C8 /* Frameworks */,
 			);
@@ -106,6 +140,7 @@
 			children = (
 				B3A9A4D32B37C02B000FF276 /* VaporWave.app */,
 				B3A9A4FC2B37C067000FF276 /* VaporWaveServiceApp.xpc */,
+				B36E2E282B3CD22E00FA9975 /* VaporWaveServerApp.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +178,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B36E2E272B3CD22E00FA9975 /* VaporWaveServerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36E2E352B3CD22E00FA9975 /* Build configuration list for PBXNativeTarget "VaporWaveServerApp" */;
+			buildPhases = (
+				B36E2E242B3CD22E00FA9975 /* Sources */,
+				B36E2E252B3CD22E00FA9975 /* Frameworks */,
+				B36E2E262B3CD22E00FA9975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VaporWaveServerApp;
+			packageProductDependencies = (
+				B36E2E362B3CD24900FA9975 /* VaporWaveServer */,
+			);
+			productName = VaporWaveServerApp;
+			productReference = B36E2E282B3CD22E00FA9975 /* VaporWaveServerApp.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 		B3A9A4D22B37C02B000FF276 /* VaporWave */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3A9A4E22B37C02D000FF276 /* Build configuration list for PBXNativeTarget "VaporWave" */;
@@ -156,6 +211,7 @@
 			);
 			dependencies = (
 				B3A9A5052B37C067000FF276 /* PBXTargetDependency */,
+				B36E2E312B3CD22E00FA9975 /* PBXTargetDependency */,
 			);
 			name = VaporWave;
 			packageProductDependencies = (
@@ -195,6 +251,9 @@
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					B36E2E272B3CD22E00FA9975 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					B3A9A4D22B37C02B000FF276 = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -218,11 +277,19 @@
 			targets = (
 				B3A9A4D22B37C02B000FF276 /* VaporWave */,
 				B3A9A4FB2B37C067000FF276 /* VaporWaveServiceApp */,
+				B36E2E272B3CD22E00FA9975 /* VaporWaveServerApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B36E2E262B3CD22E00FA9975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3A9A4D12B37C02B000FF276 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +309,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B36E2E242B3CD22E00FA9975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36E2E2D2B3CD22E00FA9975 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3A9A4CF2B37C02B000FF276 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +337,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B36E2E312B3CD22E00FA9975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B36E2E272B3CD22E00FA9975 /* VaporWaveServerApp */;
+			targetProxy = B36E2E302B3CD22E00FA9975 /* PBXContainerItemProxy */;
+		};
 		B3A9A5052B37C067000FF276 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B3A9A4FB2B37C067000FF276 /* VaporWaveServiceApp */;
@@ -270,6 +350,52 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B36E2E332B3CD22E00FA9975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VaporWaveServerApp/VaporWaveServerApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaporWaveServerApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VaporWaveServerApp;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightdigit.VaporWaveServerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B36E2E342B3CD22E00FA9975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VaporWaveServerApp/VaporWaveServerApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaporWaveServerApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VaporWaveServerApp;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightdigit.VaporWaveServerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B3A9A4E02B37C02D000FF276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -499,6 +625,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B36E2E352B3CD22E00FA9975 /* Build configuration list for PBXNativeTarget "VaporWaveServerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36E2E332B3CD22E00FA9975 /* Debug */,
+				B36E2E342B3CD22E00FA9975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B3A9A4CE2B37C02B000FF276 /* Build configuration list for PBXProject "VaporWave" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -536,6 +671,10 @@
 		B346B9492B3B7CEB0023717E /* VaporWaveService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = VaporWaveService;
+		};
+		B36E2E362B3CD24900FA9975 /* VaporWaveServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VaporWaveServer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

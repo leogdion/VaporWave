@@ -5,47 +5,50 @@
 //  Created by Leo Dion on 12/23/23.
 //
 
-import VaporWaveServer
 import VaporWaveModels
 import XPC
+import Vapor
 
 
 @available(macOS 14.0, *)
 public class Service {
   
   var listener : XPCListener!
-  //var server : Server!
-  convenience init (service : String)  throws {
+  var server : Server!
+  convenience init (service : String, forService connectingService: String) async throws {
     self.init()
     let listener = try XPCListener(
       service: service,
       incomingSessionHandler: self.incomingSessionHandler
     )
-    //async let server = try await Entrypoint.start(forService: service)
+    async let server = try await Entrypoint.start(forService: connectingService)
     self.listener = listener
-    //self.server = try await server
+    self.server = try await server
   }
   func incomingSessionHandler (_ request : XPCListener.IncomingSessionRequest)  -> XPCListener.IncomingSessionRequest.Decision {
     
     request.accept(incomingMessageHandler: self.performTask(with:))
   }
-  public static func launch (service : String) throws -> Never {
-    
-    _ = try Service(service: service)
-
+  @discardableResult
+  public static func launch (_ service : String, forService connectingService: String) async throws -> Service {
+    let service = try await Service(service: service, forService: connectingService)
+    defer {
       dispatchMain()
+    }
+    return service
   }
   func performTask(with message: XPCReceivedMessage) -> Encodable? {
-      do {
-          // Decode the message from the received message.
-          let request = try message.decode(as: CalculationRequest.self)
-
-          // Return an encodable response that will get sent back to the client.
-          return CalculationResponse(result: request.firstNumber + request.secondNumber)
-      } catch {
-          print("Failed to decode received message, error: \(error)")
-          return nil
-      }
+    return nil
+//      do {
+//          // Decode the message from the received message.
+//          let request = try message.decode(as: CalculationRequest.self)
+//
+//          // Return an encodable response that will get sent back to the client.
+//          return CalculationResponse(result: request.firstNumber + request.secondNumber)
+//      } catch {
+//          print("Failed to decode received message, error: \(error)")
+//          return nil
+//      }
   }
 }
 //import VaporWaveServer

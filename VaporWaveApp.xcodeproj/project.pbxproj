@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B31C6B8A2B3FB60E00682907 /* VaporWaveAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31C6B892B3FB60E00682907 /* VaporWaveAppApp.swift */; };
+		B31C6B8C2B3FB60E00682907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31C6B8B2B3FB60E00682907 /* ContentView.swift */; };
+		B31C6B8E2B3FB61000682907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31C6B8D2B3FB61000682907 /* Assets.xcassets */; };
+		B31C6B912B3FB61000682907 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31C6B902B3FB61000682907 /* Preview Assets.xcassets */; };
+		B35506642B40CDDB007882BE /* VaporWave in Resources */ = {isa = PBXBuildFile; fileRef = B35506632B40CDDB007882BE /* VaporWave */; };
+		B355066E2B40CE04007882BE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B355066D2B40CE04007882BE /* main.swift */; };
+		B35506732B40CE04007882BE /* VaporWaveXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B35506692B40CE04007882BE /* VaporWaveXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B355067A2B40D463007882BE /* VaporWaveService in Frameworks */ = {isa = PBXBuildFile; productRef = B35506792B40D463007882BE /* VaporWaveService */; };
+		B355067C2B40D46C007882BE /* VaporWaveModels in Frameworks */ = {isa = PBXBuildFile; productRef = B355067B2B40D46C007882BE /* VaporWaveModels */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B35506712B40CE04007882BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B31C6B7E2B3FB60E00682907 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B35506682B40CE04007882BE;
+			remoteInfo = VaporWaveXPC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B35506772B40CE04007882BE /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				B35506732B40CE04007882BE /* VaporWaveXPC.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B31C6B862B3FB60E00682907 /* VaporWaveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaporWaveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31C6B892B3FB60E00682907 /* VaporWaveAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporWaveAppApp.swift; sourceTree = "<group>"; };
+		B31C6B8B2B3FB60E00682907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B31C6B8D2B3FB61000682907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B31C6B902B3FB61000682907 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B31C6B922B3FB61000682907 /* VaporWaveApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaporWaveApp.entitlements; sourceTree = "<group>"; };
+		B35506632B40CDDB007882BE /* VaporWave */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = VaporWave; sourceTree = "<group>"; };
+		B35506692B40CE04007882BE /* VaporWaveXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = VaporWaveXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		B355066D2B40CE04007882BE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B355066F2B40CE04007882BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35506702B40CE04007882BE /* VaporWaveXPC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaporWaveXPC.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B31C6B832B3FB60E00682907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B355067C2B40D46C007882BE /* VaporWaveModels in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35506662B40CE04007882BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B355067A2B40D463007882BE /* VaporWaveService in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B31C6B7D2B3FB60E00682907 = {
+			isa = PBXGroup;
+			children = (
+				B35506622B40CDDB007882BE /* Packages */,
+				B31C6B882B3FB60E00682907 /* VaporWaveApp */,
+				B355066A2B40CE04007882BE /* VaporWaveXPC */,
+				B31C6B872B3FB60E00682907 /* Products */,
+				B35506782B40D463007882BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B31C6B872B3FB60E00682907 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B31C6B862B3FB60E00682907 /* VaporWaveApp.app */,
+				B35506692B40CE04007882BE /* VaporWaveXPC.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B31C6B882B3FB60E00682907 /* VaporWaveApp */ = {
+			isa = PBXGroup;
+			children = (
+				B31C6B892B3FB60E00682907 /* VaporWaveAppApp.swift */,
+				B31C6B8B2B3FB60E00682907 /* ContentView.swift */,
+				B31C6B8D2B3FB61000682907 /* Assets.xcassets */,
+				B31C6B922B3FB61000682907 /* VaporWaveApp.entitlements */,
+				B31C6B8F2B3FB61000682907 /* Preview Content */,
+			);
+			path = VaporWaveApp;
+			sourceTree = "<group>";
+		};
+		B31C6B8F2B3FB61000682907 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B31C6B902B3FB61000682907 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B35506622B40CDDB007882BE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B35506632B40CDDB007882BE /* VaporWave */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		B355066A2B40CE04007882BE /* VaporWaveXPC */ = {
+			isa = PBXGroup;
+			children = (
+				B355066D2B40CE04007882BE /* main.swift */,
+				B355066F2B40CE04007882BE /* Info.plist */,
+				B35506702B40CE04007882BE /* VaporWaveXPC.entitlements */,
+			);
+			path = VaporWaveXPC;
+			sourceTree = "<group>";
+		};
+		B35506782B40D463007882BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B31C6B852B3FB60E00682907 /* VaporWaveApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31C6B952B3FB61000682907 /* Build configuration list for PBXNativeTarget "VaporWaveApp" */;
+			buildPhases = (
+				B31C6B822B3FB60E00682907 /* Sources */,
+				B31C6B832B3FB60E00682907 /* Frameworks */,
+				B31C6B842B3FB60E00682907 /* Resources */,
+				B35506772B40CE04007882BE /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B35506722B40CE04007882BE /* PBXTargetDependency */,
+			);
+			name = VaporWaveApp;
+			packageProductDependencies = (
+				B355067B2B40D46C007882BE /* VaporWaveModels */,
+			);
+			productName = VaporWaveApp;
+			productReference = B31C6B862B3FB60E00682907 /* VaporWaveApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B35506682B40CE04007882BE /* VaporWaveXPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35506742B40CE04007882BE /* Build configuration list for PBXNativeTarget "VaporWaveXPC" */;
+			buildPhases = (
+				B35506652B40CE04007882BE /* Sources */,
+				B35506662B40CE04007882BE /* Frameworks */,
+				B35506672B40CE04007882BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VaporWaveXPC;
+			packageProductDependencies = (
+				B35506792B40D463007882BE /* VaporWaveService */,
+			);
+			productName = VaporWaveXPC;
+			productReference = B35506692B40CE04007882BE /* VaporWaveXPC.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B31C6B7E2B3FB60E00682907 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					B31C6B852B3FB60E00682907 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					B35506682B40CE04007882BE = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = B31C6B812B3FB60E00682907 /* Build configuration list for PBXProject "VaporWaveApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B31C6B7D2B3FB60E00682907;
+			productRefGroup = B31C6B872B3FB60E00682907 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B31C6B852B3FB60E00682907 /* VaporWaveApp */,
+				B35506682B40CE04007882BE /* VaporWaveXPC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B31C6B842B3FB60E00682907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31C6B912B3FB61000682907 /* Preview Assets.xcassets in Resources */,
+				B31C6B8E2B3FB61000682907 /* Assets.xcassets in Resources */,
+				B35506642B40CDDB007882BE /* VaporWave in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35506672B40CE04007882BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B31C6B822B3FB60E00682907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31C6B8C2B3FB60E00682907 /* ContentView.swift in Sources */,
+				B31C6B8A2B3FB60E00682907 /* VaporWaveAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35506652B40CE04007882BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B355066E2B40CE04007882BE /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B35506722B40CE04007882BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B35506682B40CE04007882BE /* VaporWaveXPC */;
+			targetProxy = B35506712B40CE04007882BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B31C6B932B3FB61000682907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B31C6B942B3FB61000682907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B31C6B962B3FB61000682907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VaporWaveApp/VaporWaveApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VaporWaveApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightdigit.VaporWaveApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B31C6B972B3FB61000682907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VaporWaveApp/VaporWaveApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VaporWaveApp/Preview Content\"";
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightdigit.VaporWaveApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B35506752B40CE04007882BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VaporWaveXPC/VaporWaveXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaporWaveXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VaporWaveXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightdigit.VaporWaveXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B35506762B40CE04007882BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VaporWaveXPC/VaporWaveXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VaporWaveXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VaporWaveXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightdigit.VaporWaveXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B31C6B812B3FB60E00682907 /* Build configuration list for PBXProject "VaporWaveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31C6B932B3FB61000682907 /* Debug */,
+				B31C6B942B3FB61000682907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B31C6B952B3FB61000682907 /* Build configuration list for PBXNativeTarget "VaporWaveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31C6B962B3FB61000682907 /* Debug */,
+				B31C6B972B3FB61000682907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35506742B40CE04007882BE /* Build configuration list for PBXNativeTarget "VaporWaveXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35506752B40CE04007882BE /* Debug */,
+				B35506762B40CE04007882BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B35506792B40D463007882BE /* VaporWaveService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VaporWaveService;
+		};
+		B355067B2B40D46C007882BE /* VaporWaveModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VaporWaveModels;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B31C6B7E2B3FB60E00682907 /* Project object */;
+}

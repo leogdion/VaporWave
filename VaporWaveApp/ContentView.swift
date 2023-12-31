@@ -41,21 +41,16 @@ class Service {
     }
     let request = CalculationRequest(firstNumber: firstNumber, secondNumber: secondNumber)
     
-    do {
-      try session.send(request) { result in
-        guard let reply = try? result.get() else {
-          return
-        }
-        
-        guard let response : CalculationResponse =
-                try? reply.decode() else {
-          return
-        }
-        
+    Task {
+      do {
+        let response : CalculationResponse =  try await session.sendMessage(request)
+
         self.resultNumber = response.result
+          
+        
+      } catch {
+        print(error)
       }
-    } catch {
-      print(error)
     }
   }
 }

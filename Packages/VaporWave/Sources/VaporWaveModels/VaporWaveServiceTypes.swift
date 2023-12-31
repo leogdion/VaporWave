@@ -9,7 +9,7 @@ import XPC
 
 @available(macOS 14.0, *)
 extension XPCSession {
-  public func send<Message, Reply>(_ message: Message) async throws -> Reply where Message : Encodable, Reply : Decodable {
+  public func sendMessage<Message, Reply>(_ message: Message) async throws -> Reply where Message : Encodable, Reply : Decodable {
     try await withCheckedThrowingContinuation { contuation in
       do {
         try self.send(message) { result in

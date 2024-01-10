@@ -19,7 +19,10 @@ let package = Package(
     ],
     dependencies: [
         // 💧 A server-side Swift web framework.
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.89.0"),
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.89.0"),        
+          .package(url: "https://github.com/apple/swift-openapi-generator", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-openapi-runtime", from: "1.0.0"),
+        .package(url: "https://github.com/swift-server/swift-openapi-vapor", from: "1.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -30,7 +33,12 @@ let package = Package(
           name: "VaporWaveServer",
           dependencies: [
             "VaporWaveModels",
-              .product(name: "Vapor", package: "vapor"),
-          ])
+              .product(name: "Vapor", package: "vapor"),                
+              .product(name: "OpenAPIRuntime", package: "swift-openapi-runtime"),
+            .product(name: "OpenAPIVapor", package: "swift-openapi-vapor")
+          ],
+      plugins: [
+            .plugin(name: "OpenAPIGenerator", package: "swift-openapi-generator"),
+        ])
     ]
 )

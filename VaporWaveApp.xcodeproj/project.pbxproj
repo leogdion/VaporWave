@@ -11,7 +11,6 @@
 		B31C6B8C2B3FB60E00682907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31C6B8B2B3FB60E00682907 /* ContentView.swift */; };
 		B31C6B8E2B3FB61000682907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31C6B8D2B3FB61000682907 /* Assets.xcassets */; };
 		B31C6B912B3FB61000682907 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31C6B902B3FB61000682907 /* Preview Assets.xcassets */; };
-		B35506642B40CDDB007882BE /* VaporWave in Resources */ = {isa = PBXBuildFile; fileRef = B35506632B40CDDB007882BE /* VaporWave */; };
 		B355066E2B40CE04007882BE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B355066D2B40CE04007882BE /* main.swift */; };
 		B35506732B40CE04007882BE /* VaporWaveXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B35506692B40CE04007882BE /* VaporWaveXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B355067A2B40D463007882BE /* VaporWaveService in Frameworks */ = {isa = PBXBuildFile; productRef = B35506792B40D463007882BE /* VaporWaveService */; };
@@ -230,7 +229,6 @@
 			files = (
 				B31C6B912B3FB61000682907 /* Preview Assets.xcassets in Resources */,
 				B31C6B8E2B3FB61000682907 /* Assets.xcassets in Resources */,
-				B35506642B40CDDB007882BE /* VaporWave in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
